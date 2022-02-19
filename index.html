@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./gird.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>E-Commerce Product Page</title>
+</head>
+<body>
+    <div class="grid wide">
+        <div class="row header">
+            <div class="col c-10 header__left">
+                <a href="/" class="c-2 header__logo">
+                    <img src="./images/logo.svg" alt="logo" class="logo">
+                </a>
+                <div class="c-10 header__nav">
+                    <a class="header__nav-link" href="#">Collections</a>
+                    <a class="header__nav-link" href="#">Men</a>
+                    <a class="header__nav-link" href="#">Women</a>
+                    <a class="header__nav-link" href="#">About</a>
+                    <a class="header__nav-link" href="#">Contact</a>
+                    <div class="line-tabs"></div>
+                </div>
+            </div>
+            <div class="col c-2 header__right">
+                <div class="header__right-cart">
+                    <img src="./images/icon-cart.svg" alt="Cart">
+                    <!-- empty cart -->
+                    <div class="header__right-cart__no-product">
+                        <div class="header__right-cart__notification">
+                            <h3>Cart</h3>
+                            <div class="cart__notification-line"></div>
+                            <div class="row cart__notification-content">
+                                <span class="cart__notification-content-info">
+                                    <div>Your cart is empty</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- have products -->
+                    <div class="header__right-cart__have-products">
+                        <span class="header__right-cart-quanlity"></span>
+                        <div class="header__right-cart__notification">
+                            <h3>Cart</h3>
+                            <div class="cart__notification-line"></div>
+                            <div class="cart__notification-content">
+                                <img src="./images/image-product-1-thumbnail.jpg" alt="Product" width="50px" height="50px">
+                                <span class="cart__notification-content-info">
+                                    <div>Fall Limited Edition Sneakers</div>
+                                    <div>$125.00 <span class="quanlity-cart-number"></span> <u class="total-price-product"></u></div>
+                                </span>
+                                <span class="cart__notification-content-bin">
+                                    <img src="./images/icon-delete.svg" alt="bin" width="16px" height="16px">
+                                </span>
+                            </div>
+                            <button type="reset" value="submit" class="cart__notification-btn">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="/" class="header__right-login">
+                    <img class="avarta" src="./images/image-avatar.png" alt="avarta" width="50px" height="50px">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col c-6 img-product-wrapper">
+                    <div class="img-product">
+                        <img class="img-product-big open" src="./images/image-product-1.jpg" alt="Picture">
+                        <img class="img-product-big" src="./images/image-product-2.jpg" alt="Picture">
+                        <img class="img-product-big" src="./images/image-product-3.jpg" alt="Picture">
+                        <img class="img-product-big" src="./images/image-product-4.jpg" alt="Picture">
+                    </div>
+                    <div class="row img-product-thumbnail-wrapper">
+                        <img class="img-product-thumbnail" src="./images/image-product-1-thumbnail.jpg" alt="Picture">
+                        <img class="img-product-thumbnail" src="./images/image-product-2-thumbnail.jpg" alt="Picture">
+                        <img class="img-product-thumbnail" src="./images/image-product-3-thumbnail.jpg" alt="Picture">
+                        <img class="img-product-thumbnail" src="./images/image-product-4-thumbnail.jpg" alt="Picture">
+                    </div>
+                </div>
+                <div class="col c-6 content-product">
+                    <h6 class="content-product__company">SNEAKER COMPANY</h6>
+                    <h2 class="content-product__name-product">Fall Limited Edition Sneakers</h2>
+                    <p class="content-product__desc">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer</p>
+                    <div class="content-product__price-and-discount">
+                        <span>$125.00</span>
+                        <b>50%</b>
+                    </div>
+                    <div class="content-product__price-origin">
+                        $250.00
+                    </div>
+                    <div class="content-product__quantily">
+                        <span class="quantily__minus"><img src="./images/icon-minus.svg" alt="minus"></span>
+                        <span class="quantily__number">0</span>
+                        <span class="quantily__plus"><img src="./images/icon-plus.svg" alt="plus"></span>
+                        <span class="quantily__add-to-cart">
+                            <button class="quantily__btn">
+                                <img src="./images/icon-cart.svg" alt="cart">
+                                <span>Add to cart</span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-img-product">
+        <div class="show-img">
+            <div class="icon-close-wrapper"><i class='icon-close bx bx-x'></i></div>
+            <span><i class='icon-back bx bx-chevron-left' ></i></span>
+            <img class="inner-product-img active" src="./images/image-product-1.jpg" alt="">
+            <img class="inner-product-img" src="./images/image-product-2.jpg" alt=""> 
+            <img class="inner-product-img" src="./images/image-product-3.jpg" alt=""> 
+            <img class="inner-product-img" src="./images/image-product-4.jpg" alt=""> 
+            <span><i class='icon-next bx bx-chevron-right'></i></span>
+            <div class="slide-img">
+                <img class="inner-img-slide" src="./images/image-product-1-thumbnail.jpg" alt="">
+                <img class="inner-img-slide" src="./images/image-product-2-thumbnail.jpg" alt="">
+                <img class="inner-img-slide" src="./images/image-product-3-thumbnail.jpg" alt="">
+                <img class="inner-img-slide" src="./images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="./app.js"></script>
+</html>
